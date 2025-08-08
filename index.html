@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeToggle" />
+      🌞 / 🌚
+    </label>
+  </div>
+
+  <!-- Password Generator Container -->
+  <div class="container">
+    <h1>Password Generator 🔐</h1>
+    
+    <div class="output-box">
+      <input type="text" id="passwordDisplay" readonly placeholder="Your password will appear here" />
+      <button id="copyBtn">📋</button>
+    </div>
+
+    <div class="controls">
+      <label>Password Length: <span id="lengthValue">12</span></label>
+      <input type="range" min="4" max="32" value="12" id="lengthSlider" />
+
+      <label><input type="checkbox" id="uppercase" checked /> Include Uppercase (A-Z)</label>
+      <label><input type="checkbox" id="lowercase" checked /> Include Lowercase (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked /> Include Numbers (0-9)</label>
+      <label><input type="checkbox" id="symbols" checked /> Include Symbols (!@#$%)</label>
+
+      <button id="generateBtn">Generate Password</button>
+    </div>
+
+    <div class="strength">
+      <span>Password Strength:</span>
+      <div id="strengthBar"></div>
+    </div>
+
+    <!-- Security Tips -->
+    <div class="tip-box">
+      💡 <span id="tipBox">Use a long password for better protection!</span>
+    </div>
+  </div>
+
+  <div class="emoji-rain">
+  <!-- 50+ emojis (repeat as needed) -->
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+  <span>🔐</span><span>🛡️</span><span>🔒</span><span>💾</span><span>🔑</span>
+</div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
